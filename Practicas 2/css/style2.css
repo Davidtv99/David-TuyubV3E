@@ -1,0 +1,77 @@
+header{
+    background:rgb(105, 105, 201);
+    width: 750px;
+    height: 250px;
+    border: 10px solid black; 
+    display: flex;
+   
+}
+.banner{
+    background: whitesmoke;
+    width: 500px;
+    height: 238px;
+    margin: 5px ;
+    border: 2px solid green;
+   
+}
+.logo{
+    background: whitesmoke;
+    width: 240px;
+    height: 238px;
+    margin: 5px;
+    border: 2px solid green;
+    
+}
+
+.texto{
+    text-align: center;
+    
+}
+.menu{
+    background:rgb(125, 163, 68);
+    width: 750px;
+    height: 50px;
+    border-top: 0px;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+    border-left: 10px solid black;
+
+}
+.principal{
+    background:rgb(165, 132, 14);
+    width: 750px;
+    height: 400px;
+    border-top: 0px;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+    border-left: 10px solid black;
+    display: flex;
+}
+
+.centro{
+    background: whitesmoke;
+    height: 388px;
+    width: 450px;
+    border:1px solid yellow;
+    margin: 5px
+    
+}
+.izquierdo{
+    background: whitesmoke;
+    height: 388px;
+    width: 300px;
+    border: 1px solid yellow;
+    margin: 5px;
+   
+}
+.pie{
+    background: yellow;
+    width: 750px;
+    height: 50px;
+    border-top: 0px;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+    border-left: 10px solid black;
+    
+}
+
