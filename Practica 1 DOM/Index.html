@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+    <title>Elementos DOM</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML="Hola Mundo";
+        const Elemento = document.getElementById("nitro");
+    </script>
+    <p id="p1">Hola Mundo</p>
+    <script>
+        document.getElementById("p1").innerHTML="Nuevo Texto"
+    </script>
+    <h1 id="titulo">Encabezado Viejo</h1> 
+    <script>
+        const elemento = document.getElementById("titulo");
+        elemento.innerHTML = "Nuevo Encabezado";
+    </script>
+    <script>
+        const element = document.getElementsByName("p");
+        const x = document.getElementById("main");
+        console.log(x);
+        const y = x.getElementsByTagName("p");
+        console.log(y);
+        
+        const X = document.getElementsByClassName("intro");
+        console.log(x);
+    </script>
+
+    <p class="intro">este es un ejemplo </p>
+    <p class="intro">es es un ejemplo 2</p>
+    <script>
+        const x4 = document.querySelectorAll("p.intro");
+        console.log(x4);
+        const h1Element = document.querySelector("h1");
+        console.log(h1Element);
+        const list = document.querySelector(".list");
+        console.log(list);
+
+        const listaDeElementos = document.querySelectorAll("ul > il");
+        listaDeElementos.forEach(item => {
+        console.log(item); 
+        });
+
+        const h1 = document.querySelector("h1");
+        h1.style.color = "blue";
+
+        const x2 = document.forms["form1"];
+        let texto = "";
+        for(let i = 0; i < i.length; i++ ){
+            texto += x2.elements[i].value +"<br>";
+        }
+        document.getElementById("demo").innerHTML = texto;
+        console.log(x2);
+
+        let lista = document.createElement("ul");
+        document.body.appendChild(lista);
+        let elemento1 = document.createElement("li");
+        elemento1.textContent = "flor";
+        lista.appendChild(elemento1);
+
+        let elemento2 = document.createElement("li");
+        elemento2.textContent = "jaguar";
+        lista.appendChild(elemento2);
+
+        const button = document.getElementById("btn");
+        button.addEventListener("click", () => {
+        alert("gracias por dar click");
+        });
+
+        function 
+        Validarformulario() {
+           let X5 = document.forms["miformulario"] ["nombre"].value;
+           if(X5 = ""){
+            alert("se debe completar el nombre");
+            return false;
+           }
+        }
+
+        function mifunction() {
+            let x6 = document.getElementById("numero").value;
+            let texto;
+            if(isNaN(x6) || x6 < 1 || x > 10){
+                texto = "entrada no valida";
+            }else{
+                texto = "entrada valida"
+            }
+            document.getElementById("demo").innerHTML=texto;
+        }
+        document.getElementById("miImagen").src="cat.jpg"
+
+        document.getElementById("demo").innerHTML= "fecha: "+ Date();
+    </script>
+</body>
+</html>
